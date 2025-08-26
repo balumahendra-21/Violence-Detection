@@ -21,9 +21,16 @@ A. Model Training (mobilenetv21-model-checkpoint.ipynb)
   - Frames are resized to 128x128 pixels and normalized.
 
 - Dataset:
+  - This dataset contains real-world video footage of violent and non-violent situations,
+    intended for training and evaluating machine learning models for violence detection.
   - Uses the "Real Life Violence Dataset" with two classes: "Violence" and "NonViolence".
   - 700 videos are sampled due to memory constraints.
-
+     
+  Source
+  ------
+  Available on Kaggle:
+  https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset
+  
 - Model Architecture:
   - Based on MobileNetV2 (transfer learning).
   - The base model is frozen; a dense layer with sigmoid activation is added for binary classification.
